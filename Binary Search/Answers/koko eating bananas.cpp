@@ -13,9 +13,9 @@ int maximum_element(vector<int> nums)
     return ans;
 }
 
-int calculateHours(vector<int> piles,int mid)
+long long calculateHours(vector<int> piles,int mid)
 {
-    int hours = 0;
+    long long hours = 0;
     for(auto it:piles)
     {
         hours += ceil((double)it/(double)mid);
